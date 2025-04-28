@@ -57,7 +57,7 @@ Results:
   - Result: Test1 # Testing Expected is Denorm and Out is zero, and both have same sign bit
     Rule: BufferFuzzy
     ULPT: 1
-    DenormMode: Any 
+    DenormMode: Any
     Actual: Out1
     Expected: Expected1
   - Result: Test2 # Test two values are exactly the same
@@ -82,21 +82,29 @@ DescriptorSets:
       DirectXBinding:
         Register: 0
         Space: 0
+      VulkanBinding:
+        Binding: 0
     - Name: Out2
       Kind: RWStructuredBuffer
       DirectXBinding:
         Register: 1
         Space: 0
+      VulkanBinding:
+        Binding: 1
     - Name: Out3
       Kind: RWStructuredBuffer
       DirectXBinding:
         Register: 2
         Space: 0
+      VulkanBinding:
+        Binding: 2
     - Name: Out4
       Kind: RWStructuredBuffer
       DirectXBinding:
         Register: 3
         Space: 0
+      VulkanBinding:
+        Binding: 3
 ...
 #--- end
 

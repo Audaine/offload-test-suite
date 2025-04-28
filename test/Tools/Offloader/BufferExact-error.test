@@ -38,6 +38,8 @@ DescriptorSets:
       DirectXBinding:
         Register: 0
         Space: 0
+      VulkanBinding:
+        Binding: 0
 ...
 #--- end
 
@@ -68,4 +70,3 @@ DescriptorSets:
 # CHECK: Height:          0
 # CHECK: Width:           0
 # CHECK: Depth:           0
-
